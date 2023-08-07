@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    background: url(https://www.rd.com/wp-content/uploads/2020/10/101-short-jokes-opener.jpg);
+    background-position: right;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color:skyblue;
+    opacity: 1;
+    padding:20px;
+    box-shadow: 0 6px 10px rgba(253, 0, 255, 1);
+    border-radius: 10px;
+    width:70%;
+    text-align: center;
+    color:black;
+}
+
+.heading{
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: monospace;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .4);
+    letter-spacing: 5px;
+}
+
+.joke{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+    color: grey;
+}
+
+.btn{
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    margin-left:0px;
+    background-color:greenyellow;
+    border-color: rgba(255, 255, 255, .6);
+    text-transform:capitalize;
+    width: 400px;
+    color: white;
+}
+.btn:hover{
+    background-color:darksalmon;
+    transition: all .4s ease;
+}
+
+.category{
+    background-color:plum;
+    padding: 10px;
+    margin-left:0;
+    border-radius: 4px;
+    width: 250px;
+    text-align: center;
+    font-size: 17px;
+    color:black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.category option{
+    background-color: rgb(219, 255, 184);
+}
+
+.category option:checked{
+    background-color: rgb(121, 222, 177);
+}
+
+@media (max-width:1070px){
+    .container{
+        justify-content: center;
+    }
+    .btn{
+        justify-content: center;
+        margin-bottom: .6rem;
+        margin-left: 10px;
+    }
+    .category{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    .category{
+        width: 150px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .btn{
+        width: 150px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 1px;
+        height: 15px;
+        justify-content: center;
+        margin-top: 50%;
+    }
+    .container{
+        width: 80%;
+        /* height: 90vh; */
+    }
+    .container p{
+        font-size: 22px;
+        margin-top: 5rem;   
+    }
+    .container h1{
+        font-size: 30px;
+    }
+}
+
